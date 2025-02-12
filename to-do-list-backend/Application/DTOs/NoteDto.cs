@@ -1,6 +1,6 @@
-﻿using DataAccess;
+﻿using Domain.Entities;
 
-namespace BusinessLogic.DTOs
+namespace Application.DTOs
 {
     public class NoteDto
     {

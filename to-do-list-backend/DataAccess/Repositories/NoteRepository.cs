@@ -1,8 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Infrastracture.Data;
+using Domain.Entities;
+using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Repository
+namespace Infrastracture.Repository
 {
-    internal class NoteRepository(AppContext context) : INoteRepository
+    internal class NoteRepository(Data.AppContext context) : INoteRepository
     {
         public async Task CreateAsync(Note note, CancellationToken cancellationToken = default)
         {
