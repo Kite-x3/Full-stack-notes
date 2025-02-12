@@ -1,0 +1,45 @@
+.TaskAddForm {
+  background-color: green;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 0;
+}
+
+.Field input {
+  padding: 0.5rem;
+  background: transparent;
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 2px solid #ccc;
+  transition: border 0.5s;
+}
+
+.Field input:focus {
+  outline: none;
+  border-bottom-color: #59e74e;
+}
+::placeholder {
+  color: rgba(0, 0, 0, 0.642);
+}
+
+.TaskAddForm button {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.TaskAddForm button:hover {
+  box-shadow: 1px 1px 8px #59e74e;
+}

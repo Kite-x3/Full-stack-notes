@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { TaskList } from './components/taskList/TaskList'
+import { TasksPage } from './pages/TasksPage'
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<TaskList />}></Route>
+        <Route path='/' element={<TasksPage />}></Route>
       </Routes>
     </Router>
   )

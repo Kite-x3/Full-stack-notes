@@ -3,7 +3,7 @@
   border-radius: 2rem;
   padding: 1rem;
   min-width: 10vw;
-  min-height: 8vh;
+  height: fit-content;
   max-width: 20vw;
 }
 .Note h2 {
