@@ -1,8 +1,9 @@
-﻿using BusinessLogic.DTOs;
-using DataAccess;
-using DataAccess.Repository;
+﻿using Application.DTOs;
+using Application.Interfaces;
+using Domain.Entities;
+using Domain.Interfaces;
 
-namespace BusinessLogic
+namespace Application.Services
 {
     internal class NoteService(INoteRepository noteRepository) :INoteService
     {

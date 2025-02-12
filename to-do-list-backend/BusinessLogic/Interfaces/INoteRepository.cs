@@ -1,4 +1,6 @@
-﻿namespace DataAccess.Repository
+﻿using Domain.Entities;
+
+namespace Domain.Interfaces
 {
     public interface INoteRepository
     {

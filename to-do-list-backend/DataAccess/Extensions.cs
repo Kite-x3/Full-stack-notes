@@ -1,13 +1,9 @@
-﻿using DataAccess.Repository;
+﻿using Infrastracture.Repository;
+using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DataAccess
+namespace Infrastracture
 {
     public static class Extensions
     {
@@ -15,7 +11,7 @@ namespace DataAccess
         {
             serviceCollection.AddScoped<INoteRepository, NoteRepository>();
 
-            serviceCollection.AddDbContext<AppContext>(x =>
+            serviceCollection.AddDbContext<Infrastracture.Data.AppContext>(x =>
             {
                 x.UseNpgsql("Host=localhost;Database=NoteDb;Username=postgres;Password=1234");
             });

@@ -1,4 +1,4 @@
-﻿namespace DataAccess
+﻿namespace Domain.Entities
 {
     public class Note
     {

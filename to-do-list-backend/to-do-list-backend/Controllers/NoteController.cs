@@ -1,11 +1,11 @@
-using BusinessLogic;
+using Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using to_do_list_backend.DTOs;
 
 namespace to_do_list_backend.Controllers
 {
     [ApiController]
-    [Route("Note")]
+    [Route("Notes")]
     public class NoteController(INoteService noteService) : ControllerBase
     {
         [HttpPost]

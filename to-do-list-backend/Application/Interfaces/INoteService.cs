@@ -1,6 +1,6 @@
-﻿using BusinessLogic.DTOs;
+﻿using Application.DTOs;
 
-namespace BusinessLogic
+namespace Application.Interfaces
 {
     public interface INoteService
     {
