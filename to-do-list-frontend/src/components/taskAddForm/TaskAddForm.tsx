@@ -7,15 +7,16 @@ const handleSubmit = (e: React.FormEvent) => {
 export const TaskAddForm = () => {
   return (
     <form className={classes.TaskAddForm} onSubmit={handleSubmit}>
+      <h2>Добавление новой заметки</h2>
       <div className={classes.Field}>
-        <label htmlFor='Title'>Title</label>
-        <input type='text' placeholder='Title' id='Title' name='Title' />
+        <label htmlFor='Title'>Заголовок</label>
+        <input type='text' placeholder='Заголовок' id='Title' name='Title' />
       </div>
       <div className={classes.Field}>
-        <label htmlFor='Text'>Text</label>
-        <input type='text' placeholder='Text' id='Text' name='Text' />
+        <label htmlFor='Text'>Текст</label>
+        <input type='text' placeholder='Текст' id='Text' name='Text' />
       </div>
-      <button>Add</button>
+      <button>Добавить</button>
     </form>
   )
 }
