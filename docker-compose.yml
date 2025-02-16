@@ -1,0 +1,35 @@
+services:
+  #api
+  webapi:
+    build:
+      context: .
+      dockerfile: to-do-list-backend/Dockerfile
+    ports: -"8080:80"
+    depends_on:
+      - postgres
+    environment:
+      - ConnectionStrings__Database=Host=postgres;Port=5432;Database=NoteDb;Username=postgres;Password=1234
+
+  #frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: to-do-list-frontend/Dockerfile
+    ports: -"3000:80"
+    depends_on:
+      - webapi
+
+  #Database
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: NoteDb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports: -"5432:5432"
+    volumes: -postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
