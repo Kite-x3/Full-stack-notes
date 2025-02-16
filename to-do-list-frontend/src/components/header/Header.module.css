@@ -1,0 +1,17 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  height: 4rem;
+  width: auto;
+}
+
+.Navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
