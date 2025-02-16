@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{25E3B25F-5104-4930-8D2C-049E742C5351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{25E3B25F-5104-4930-8D2C-049E742C5351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

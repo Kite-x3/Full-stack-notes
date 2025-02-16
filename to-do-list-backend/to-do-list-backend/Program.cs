@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDataAccess();
+builder.Services.AddDataAccess(builder.Configuration);
 builder.Services.AddBusinessLogic();
 
 builder.Services.AddCors(options =>
